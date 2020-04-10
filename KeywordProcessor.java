@@ -517,7 +517,7 @@ public class KeywordProcessor {
                             idx = sequence_end_pos;
                     }
                     current_dict = this.keyword_trie_dict;
-                    if(!longest_sequence_found.isEmpty()){
+                    if(longest_sequence_found != null && !longest_sequence_found.isEmpty()){
                         ArrayList<Object> keyword_info = new ArrayList<>();
                         keyword_info.add(longest_sequence_found);
                         keyword_info.add(sequence_start_pos);
